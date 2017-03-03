@@ -4,31 +4,33 @@ body{
 	    font-size: 15px;
 	}
 	
-	nav {
-
-	    background-color: #808080;
-	    margin: 0;
-	    overflow: hidden;
-
-	}
+	.navigation-bar {
+    width: 100%;  
+    height: 80px; 
+    background-color: #808080; 
+    margin: 0;
+	padding: 0;
+	display: inline-block;
+    vertical-align: top;
+    margin-right: 0px;
+    line-height: 80px;    /* if you want it vertically middle of the navbar */
+}		
 	
-	nav ul{
-	    margin: 0;
-	    padding: 0;
-	}
+	.logo {
+    display: inline-block;
+    vertical-align: top;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    margin-top: 15px;    /* if you want it vertically middle of the navbar. */
+}
 
-	nav ul li {
+	 ul li {
 
 	    /*  list items in a row, without using float */
 	    display: inline-block;
 	    list-style-type: none;
 	}
-	/* Create a style for the first level items */
-	nav > ul > li > a {
-	    color: #ffffff;
-	    background-color:#808080;
-	    display: block;
-	    line-height: 2em;
-	    padding: 0.5em 0.5em;
-	    text-decoration: none;
-	}
+	
+
+
