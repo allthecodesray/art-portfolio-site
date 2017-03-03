@@ -6,7 +6,7 @@ body{
 	
 	nav {
 
-	    background-color: #333;
+	    background-color: #808080;
 	    margin: 0;
 	    overflow: hidden;
 
@@ -25,8 +25,8 @@ body{
 	}
 	/* Create a style for the first level items */
 	nav > ul > li > a {
-	    color: #aaa;
-	    background-color:#FF0;
+	    color: #ffffff;
+	    background-color:#808080;
 	    display: block;
 	    line-height: 2em;
 	    padding: 0.5em 0.5em;
