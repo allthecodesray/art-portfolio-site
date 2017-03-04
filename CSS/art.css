@@ -67,7 +67,28 @@ body {
   	color: #fff;
   
  }
- 
+.footer {
+    background: #444;
+    padding: 10px 0;
 }
 
+.footer a {
+    color: #444;
+    font-size: 20px;
+    padding: 10px;
+    border-right: 1px solid #444;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.footer a:first-child {
+    border-left: 1px solid #444;
+}
+
+.footer a:hover {
+    color: white;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+}
 
