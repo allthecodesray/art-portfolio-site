@@ -73,12 +73,14 @@ body {
 }
 
 .footer a {
-    color: #444;
-    font-size: 20px;
+    color: #fff;
+    
     padding: 10px;
-    border-right: 1px solid #444;
+    border-right: 1px solid #fff;
     -webkit-transition: all .5s ease;
     transition: all .5s ease;
+    font-family: 'Oswald', sans-serif;
+  font-size: 1.2em;
 }
 
 .footer a:first-child {
