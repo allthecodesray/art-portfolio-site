@@ -44,19 +44,28 @@ body {
     line-height: 50px;
     font-size: 1.4em;
   }
+  #div1{
+  color:red;
+	height:300px;
+	width:300px;
+  
+  }
  
 .nav li {
     display: inline-block;
     margin-right: -4px;
   }
  .logo {
-  display: inline-block;
-    margin-right: -4px;
+ 	
+ 	margin:auto;
+ 	
+    display: inline-block;
+    
     width: 50px;
     height: 50px;
     text-decoration: none;
-  color: #fff;
-  transition: .3s background-color;
+  	color: #fff;
+  
  }
  
 }
