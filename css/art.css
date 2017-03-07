@@ -1,12 +1,4 @@
 
-
-body.home a.home, body.articles a.articles, body.blog a.blog {
-
-background-color: green;
-
-}
-
-
 body {
   margin: 0;
   padding: 0;
