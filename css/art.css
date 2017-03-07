@@ -2,15 +2,15 @@
 
 body.home  {
 
-background-color: yellow;
+inline-block: yellow;
 
 }
 
-body {
+<!--body {
   margin: 0;
   padding: 0;
   background: #ffffff;
-}
+}-->
  
 .nav ul {
   list-style: none;
