@@ -3,8 +3,8 @@
 var make_button_active = function()
 {
   //Get item siblings
-  var siblings =($(this).siblings());
-
+  var siblings =($(this).siblings()); 
+  
   //Remove active class on all buttons
   siblings.each(function (index)
     {
