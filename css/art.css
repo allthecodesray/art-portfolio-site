@@ -3,7 +3,18 @@ body {
   padding: 0;
   background: #ffffff;
 }
- 
+
+ /* needed by bio for quote */
+        #myQuote { background-color: red;
+          font-style: italic;
+         color: black ;
+         width: 400px;
+         margin: 10px;
+                margin-left:10px;
+                padding-top: 30px;
+                padding-left: 10px;
+/* needed by bio for quote */
+		
 .nav ul {
   list-style: none;
   background-color: #444;
