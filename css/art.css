@@ -2,6 +2,8 @@ body {
   margin: 0;
   padding: 0;
   background: #ffffff;
+  font-family: 'Oswald', serif;
+  font-size: 1.2em;
 }-->
 
 /* needed by bio page for quote */
@@ -9,11 +11,13 @@ body {
           background-image: url('../images/BIO/quoteBackground.jpg'); /*source https://cdn.pixabay.com/photo/2015/12/03/08/50/paper-1074131_960_720.jpg  */
           opacity: 0.65; 
 	
-	width:400px;
-	height:140px;
+	width:420px;
+	height:275px;
+	position:auto;
         
 	text-align: center;
-        font-style: italic;
+        font-family: 'Great Vibes', cursive;
+	font-size: 20px;
         
 	color: black ;
         
