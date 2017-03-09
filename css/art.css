@@ -7,6 +7,7 @@ body {
   font-size: 1.2em;
 }-->
 
+
 /* needed by bio page for quote */
 .myQuote {
           background-image: url('../images/BIO/quoteBackground.jpg'); /*source https://cdn.pixabay.com/photo/2015/12/03/08/50/paper-1074131_960_720.jpg  */
@@ -15,7 +16,7 @@ body {
 	width:420px;
 	height:275px;
 	position:auto;
-        
+	
 	text-align: center;
         font-family: 'Great Vibes', cursive;
 	font-size: 20px;
@@ -25,8 +26,32 @@ body {
 	margin: 10px;
                 margin-left:10px;
                 padding-top: 30px;
-                padding-left: 10px; } 
-/* needed by bio page for quote */
+                padding-left: 10px; }
+/* needed by bio page for quote  ends*/
+/* needed by bio page float */
+  .floatRight {
+    float: right;
+    width: ;
+    height: ;
+    margin: 10px;
+    border: 20px;
+    bottom: 300px;
+  		}
+
+  .floatLeft {
+    float: left;
+    width: ;
+    height: ;
+    margin: 20px ;
+    border: 20px;
+		}
+
+  .floatClear {
+    padding: 20px;
+      overflow: auto;
+		}
+/* floats for BIO page end */
+
  
 
 
@@ -239,4 +264,4 @@ body {
 }
 }
 
->>>>>>> heino
+
