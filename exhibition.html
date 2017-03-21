@@ -15,7 +15,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
 
-<!--local style as used float on this page  -->
+
   <style>
   .floatRight {
     float: right;
@@ -37,8 +37,13 @@
     padding: 20px;
       overflow: auto;
 }
+ #map {
+        width: 25%;
+        height: 250px;
+        background-color: grey;
+      }
 
-  </style> <!--heino needs -->
+  </style> 
 
 </head>
 
@@ -48,7 +53,7 @@
   <header>
     <div class="nav">
       <ul>
-      <li> <div id="div1"><img class="logo" src="images/logo.jpg"></div>
+      <li> <div id="div1"><img class="logo" src="images/pandl_logo.jpeg"></div>
       </li>
         <li class="home"><a href="index.html">Home</a></li>
         <li class="tutorials"><a href="#">My Portofolio</a></li>
@@ -62,7 +67,66 @@
 <!--exhibition starts> -->
 
 
+
+<div class="floatClear">
+</div>
+<div id="map">
+    <script>
+      function initMap() {
+        var uluru = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCd_hz2Q_xbZXAv-TLNAtWMKeskWi1s6mo&callback=initMap">
+    </script>
+
+<br>
+<br><br>
+
+</div>
+<div>
+<p>urlutu art centre, Queensland, Australia</p>
+<p>June 4th from 9:00am until 20:00</p>
+<br><br>
+</div>
+
+
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.496168949716!2d136.90821994360678!3d35.16918408807679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600370d0ca0bb95d%3A0xba33d02bc07c84dd!2sAichi+Arts+Center!5e0!3m2!1sen!2suk!4v1490087770417" width=25% height=250px frameborder="0" style="border:0" allowfullscreen></iframe>
+
+<div>
+<p>Aichi art centre, nagoya, Japan</p>
+<p>June 12th from 9:00am until 20:00</p>
+<br><br>
+</div>
+
+<footer class="footer">
+    <div class="container text-center">
+        <a> Mary Coleman </a>
+        <a> 2 Cow Dr, Dublin 2, Ireland </a>
+        <a href="#"><img class="logo" src="images/facebook.jpg"><i class="facebook"></i></a>
+        <a href="#"><img class="logo" src="images/twitter.jpg"><i class="twitter"></i></a>
+        <a><small>© Copyright Fabien Heinen, Ray O'Connor, Heino Vakkilainen Corp. <script type="text/javascript">
+        var d = new Date()
+document.write(d.getFullYear())
+</script> </small></a>
+   
+         
+    </div>
+    </footer>
+
+
+  </header>
 </body>
 
 
 </html>
+
