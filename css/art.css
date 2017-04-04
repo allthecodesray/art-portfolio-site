@@ -54,7 +54,6 @@ body {
 /* floats for BIO page END */
 
 /* needed for gallery START */
-
 a:hover {
 	color: yellow;
 	text-decoration: underline;
@@ -113,6 +112,12 @@ a:hover {
   color: #444;
   cursor: default;
 }
+
+.navSelected {
+  background-color: #005f5f;
+}
+ /* end nav section */
+
  
 @media screen and (min-width: 600px) {
   .nav li {
