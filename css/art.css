@@ -11,8 +11,7 @@ body {
 /* needed by bio page for quote START*/
 .myQuote {
           background-image: url('../images/BIO/quoteBackground.jpg'); /*source https://cdn.pixabay.com/photo/2015/12/03/08/50/paper-1074131_960_720.jpg  */
-          opacity: 0.65; 
-	
+          opacity: 0.65;
 	width:420px;
 	height:275px;
 	position:auto;
