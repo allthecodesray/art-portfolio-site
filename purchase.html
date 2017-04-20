@@ -1,0 +1,183 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+
+  
+  <meta charset="UTF-8">
+
+  <title></title>
+  <meta name="description" content="Art portofolio">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!--  helps the web site to deplay nicely on various devices -->
+ 
+  <link rel="stylesheet" href="css/art.css">
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+
+
+<body class="home">
+
+
+</SCRIPT>
+
+  <header>
+    <div class="nav">
+      <ul>
+      <li> <div id="div1"><img class="logo" src="images/pandl_logo.jpeg"></div>
+      </li>
+        <li class="splash"><a href="index.html">Home</a></li>
+        <li class="portofolio"><a href="portfolio.html">My Portfolio</a></li>
+        <li class="about"><a href="exhibition.html">Exhibition</a></li>
+        <li class="news"><a href="bio.html">Bio</a></li>
+        <li class="navSelected"><a href="#">Purchase</a></li>
+      </ul>
+    </div>
+</header>    
+    <div class="page_block">
+			<div class="form_container">
+			
+				<h1>Purchase Form</h1>
+				<form name="pform" onsubmit="confirmSendEmail(); return false;">
+
+				<div class="form_column1">
+				<label>Name<label>
+				<input id="name" type="text" name="name"/ required>
+	
+				<label>Email<label>
+				<input id="email" type="text" name="email"/ required>
+
+				<label>Phone<label>
+				<input id="phone" type="text" name="phone"/>
+				
+				<label>Budget<label>
+				<input id="budget" type="text" name="budget"/>
+				<label>Comments<label>
+				<textarea id="comms" name="comms"></textarea>
+
+				</div>
+				
+				<div class="form_column2">
+				<label>Type<label>
+    				<select id="type" name="type">
+      				<option value="land">Landscape</option>
+      				<option value="port">Portrait</option>
+    				</select>
+				
+				<label>Paint<label>
+    				<select id="paint" name="paint">
+      				<option value="oil">Oil</option>
+      				<option value="acrylic">Acrylic</option>
+      				<option value="water">Watercolour</option>
+    				</select>
+
+				<label>No. of Subjects<label>
+    				<select id="sub" name="subjects">
+      				<option value="1">1</option>
+      				<option value="2">2</option>
+      				<option value="3">3</option>
+      				<option value="4">4</option>
+      				<option value="5">5</option>
+      				<option value="6">More Than 5</option>
+    				</select>
+
+				<label>Scanned Image of Subject<label>
+				<input id="image_url" type="text" name="image_url"/>
+				</div>				
+				<div class="button_row">
+				<button type="submit" class="sendemail">Send Purchase Request</button>
+				<button type="button" class="getquote" onClick="generateQuote()">Get Quote</button>
+				</div>
+
+				<script>
+
+					function confirmSendEmail()
+					{
+						
+						var pname = "Name:\t"+document.forms["pform"]["name"].value+"\n";
+						var pemail = "Email:\t"+document.forms["pform"]["email"].value+"\n";
+						var pphone = "Phone:\t"+document.forms["pform"]["phone"].value+"\n";
+						var pbudget = "Budget:\t"+document.forms["pform"]["budget"].value+"\n";
+						var pcomms = "Comments:\t"+ document.forms["pform"]["comms"].value+"\n";
+
+						window.confirm("Send Purchase Request\n"+pname+pemail+pphone+pbudget+pcomms); 
+
+					}
+
+					function generateQuote()
+					{
+
+						const land_price=40;
+						const portrait_price=25;
+						const acrylic_rate=0.3;
+						const water_rate=0.1;
+						const oil_rate=0.2;
+						var base_price, paint_rate, no_subjects;
+						var ptype = document.forms["pform"]["type"].value;
+						
+						if (ptype=='land')
+						{
+							base_price=land_price;
+
+						}
+
+						else
+						{
+							base_price=portrait_price;
+
+						}
+
+						switch (document.forms["pform"]["paint"].value){
+						case "oil":
+							paint_rate=oil_rate;
+							break;
+						case "watercolour":
+							paint_rate=water_rate;
+							break;
+						case "acrylic":
+							paint_rate=acrylic_rate;
+							break;
+						}
+						
+						no_subjects=document.forms["pform"]["sub"].value;
+
+						var result = base_price * no_subjects;
+						result = result + (result * paint_rate);
+
+						window.alert("Here is your quote:\n\u20ac"+result);
+
+					}
+				</script>
+
+
+
+
+				</form>
+		
+			</div>
+            </div>
+    <footer class="footer">
+    <div class="footer_block">
+        <a> Mary Coleman </a>
+        <a> 2 Cow Dr, Dublin 2, Ireland </a>
+        <a href="#"><img class="footer_icons" src="images/facebook.jpg"><i class="facebook"></i></a>
+        <a href="#"><img class="footer_icons" src="images/twitter.jpg"><i class="twitter"></i></a>
+        <a><small>© Copyright Fabien Heinen, Ray O'Connor, Heino Vakkilainen Corp. <script type="text/javascript">
+        var d = new Date()
+document.write(d.getFullYear())
+</script> </small></a>
+   
+         
+    </div>
+    </footer>
+
+
+
+</body>
+
+
+</html>

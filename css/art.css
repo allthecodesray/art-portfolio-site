@@ -1,3 +1,94 @@
+div.page_block{
+display:block;
+width:100%;
+clear:both;
+}
+
+div.footer_block{
+display:block;
+}
+
+
+div.form_container{
+	background-color: #cccccc;
+	width: 60%;
+	height: 100%;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 14px;
+	font-style: italic;
+	line-height:24px;
+	font-weight:bold;
+	color: #09c;
+	text-decoration: none;
+	padding: 10px;
+	border:1px solid #999;
+	float:right;
+	clear:both;
+	}
+div.form_column1{
+	float:left;
+}
+
+div.form_column2{
+	float:right;
+	
+}
+	
+div.form_column1 input,
+div.form_column2 select,
+div.form_column2 input{
+	width:375px;
+	display: block;
+	border: 1px solid #999;
+	height: 25px;
+	}
+
+
+
+div.form_column1 textarea{
+	width:375px;
+	height: 30px;
+	display: block;
+	}
+
+div.button_row{
+	clear:both;
+	}
+
+.sendemail{
+	float:left;
+	width:375px;
+}
+
+.getquote{
+	float:right;
+	width:375px;
+}
+
+div.button_row button{
+    background-color: #444444;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 div.splash_pic_container
 {
 	text-align:right;
@@ -82,7 +173,7 @@ a:hover {
 }
 
 .gallery {
-  align="center";
+  align:"center";
 }
 
 .thumbnailsContainer img {
