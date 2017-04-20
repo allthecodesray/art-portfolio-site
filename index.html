@@ -39,17 +39,61 @@
     </div>
     
     
-      <p> this is damn some ramdom text to test the body<p>
-        <p> this is some ramdom text to test the body<p>
-          <p> this is some ramdom text to test the body<p>
-            <p> this is some ramdom text to test the body<p>
-            <p> this is some ramdom text to test the body<p>
-        <p> this is some ramdom text to test the body<p>
-          <p> this is some ramdom text to test the body<p>
+<div class="splash_pic_container">
 
-        <p> this is some ramdom text to test the body<p>
-          <p> this is some ramdom text to test the body<p>
-            <p> this is some ramdom text to test the body<p>
+<script language="javascript">
+    var delay=5000 //set delay in miliseconds
+    var curindex=0
+    var randomimages=new Array()
+randomimages[0]="images/landscapes/12294460243_87a01f527f_b.jpg"
+randomimages[1]="images/landscapes/12344249095_f03efd6635_b.jpg"
+randomimages[2]="images/landscapes/19596124584_c86dff3931_b.jpg"
+randomimages[3]="images/landscapes/20078702499_f15cbda7d5_b.jpg"
+randomimages[4]="images/landscapes/28424708241_dc8c81ae79_b.jpg"
+randomimages[5]="images/landscapes/491630638_1280x720.jpg"
+randomimages[6]="images/landscapes/acrylic-landscape-1737721_960_720.jpg"
+randomimages[7]="images/landscapes/Acrylic-Paint-Painted-Landscape-Brush-Strokes-1742803.jpg"
+randomimages[8]="images/landscapes/Art-Painting-Coast-Drawing-California-Ocean-1491510.jpg"
+randomimages[9]="images/landscapes/chinese-painting.jpg"
+randomimages[10]="images/landscapes/Cottages_and_a_windmill_drawn_by_John_Constable.jpg"
+randomimages[11]="images/landscapes/Fog-Art-Tuscany-Watercolour-Painting-Landscape-75120.jpg"
+randomimages[11]="images/landscapes/George_Henry_Burgess_-_'Queen_Street,_Honolulu',_watercolor_over_graphite_painting,_1856,_Honolulu_Academy_of_Arts.jpg"
+randomimages[12]="images/landscapes/images1.jpeg"
+randomimages[13]="images/landscapes/images2.jpeg"
+randomimages[14]="images/landscapes/images3.jpeg"
+randomimages[15]="images/landscapes/images.jpeg"
+randomimages[16]="images/landscapes/'Kilauea_Crater,_Hawai'i_Island',_watercolor_over_graphite_on_paper_by_René_Gillotin,_Honolulu_Museum_of_Art.JPG"
+randomimages[17]="images/landscapes/landscape-21370_960_720.jpg"
+randomimages[18]="images/landscapes/landscape-979517_960_720.jpg"
+randomimages[19]="images/landscapes/Landscape-Fall-Painting-Trees-Season-Autumn-20401.jpg"
+randomimages[20]="images/landscapes/painting-landscape-1750114_960_720.jpg"
+randomimages[21]="images/landscapes/'Puako,_Kohala,_Hawaii',_watercolor_painting_by_Paul_Emmert,_c._1859,_Honolulu_Academy_of_Arts.jpg"
+randomimages[22]="images/landscapes/Robert_C._Barnfield_(English)_-_'Captain_Cook's_Monument',_watercolor,_c._1887,_Honolulu_Academy_of_Arts.jpg"
+randomimages[23]="images/landscapes/Stanisław_Masłowski_(1853-1926),_Autumn_landscape_in_Rybiniszki,_1902.jpeg"
+randomimages[24]="images/landscapes/Watercolor_landscape_meetinghouse_byMerrillGWheelock_AmericanAntiquarianSociety.jpg"
+randomimages[25]="images/landscapes/watercolour-1578074_960_720.jpg"
+randomimages[26]="images/landscapes/watercolour-573743_960_720.jpg"
+randomimages[27]="images/landscapes/watercolour-75118_960_720.jpg"
+    var preload=new Array()
+    for (n=0;n<randomimages.length;n++)
+    {
+        preload[n]=new Image()
+        preload[n].src=randomimages[n]
+    }
+    document.write('<img name="defaultimage" src="'+randomimages[Math.floor(Math.random()*(randomimages.length))]+'">')
+    function rotateimage()
+    {
+    if (curindex==(tempindex=Math.floor(Math.random()*(randomimages.length)))){
+    curindex=curindex==0? 1 : curindex-1
+    }
+    else
+    curindex=tempindex
+        document.images.defaultimage.src=randomimages[curindex]
+    }
+    setInterval("rotateimage()",delay)
+    </script>
+
+</div>
             
     <footer class="footer">
     <div class="container text-center">
