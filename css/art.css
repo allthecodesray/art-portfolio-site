@@ -299,6 +299,7 @@ a:hover {
  }
 
 .footer {
+    display:block;
     position: auto;
     background: #444;
     padding: 10px 0;
@@ -401,8 +402,10 @@ body {
 
  }
 .footer {
+	display:block;
     background: #444;
     padding: 10px 0;
+	clear:both;
 }
 
 .footer a {
