@@ -262,7 +262,7 @@ a:hover {
   color:red;
 	height:18.75em;
 	width:18.75em;
-
+	clear:both;
   }
 }
 .nav li {
@@ -277,6 +277,7 @@ a:hover {
     height: 6.25em;
     text-decoration: none;
   	color: #fff;
+
 
  }
 
@@ -331,4 +332,9 @@ body{
 	margin:0;
 	padding:0;
 	/*height:100%;*/
+}
+
+.clear
+{
+	clear:both;
 }
