@@ -3,6 +3,7 @@ div.page_block{
 display:block;
 width:100%;
 clear:both;
+
 }
 
 div.footer_block{
@@ -13,17 +14,21 @@ display:block;
 div.form_container{
 	background-color: #cccccc;
 	width: 60%;
+  min-width: 43em;
 	height: 100%;
 	font-family: Tahoma, Geneva, sans-serif;
-	font-size: 14px;
+	font-size: 0.875em;
 	font-style: italic;
-	line-height:24px;
+	line-height:1.5em;
 	font-weight:bold;
 	color: #09c;
 	text-decoration: none;
-	padding: 10px;
-	border:1px solid #999;
-	float:right;
+	padding: 0.625em;
+  margin-bottom: 10em;
+  margin-left: 10%;
+  margin right: 10%;
+	border:0.0625em solid #999;
+	float: none;
 	clear:both;
 	}
 div.form_column1{
@@ -38,17 +43,17 @@ div.form_column2{
 div.form_column1 input,
 div.form_column2 select,
 div.form_column2 input{
-	width:375px;
+	width:23.4375em;
 	display: block;
-	border: 1px solid #999;
-	height: 25px;
+	border: 0.0625em solid #999;
+	height: 1.5625em;
 	}
 
 
 
 div.form_column1 textarea{
-	width:375px;
-	height: 30px;
+	width:23.4375em;
+	height: 1.875em;
 	display: block;
 	}
 
@@ -58,19 +63,19 @@ div.button_row{
 
 .sendemail{
 	float:left;
-	width:375px;
+	width:23.4375em;
 }
 
 .getquote{
 	float:right;
-	width:375px;
+	width:23.4375em;
 }
 
 div.button_row button{
     background-color: #444444;
     color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
+    padding: 0.875em 1.25em;
+    margin: 0.5em 0;
     border: none;
     cursor: pointer;
 
@@ -94,7 +99,7 @@ div.splash_pic_container
 {
 	text-align:right;
 	width:100%;
-	height:600px;
+	height:37.5em;
 
 
 }
@@ -110,8 +115,8 @@ div.splash_pic_container img
 
 .pictures{
     overflow:hidden;
-    width:100px;
-    height:100px
+    width:6.25em;
+    height:6.25em
           }
 
 .pictures:hover{
@@ -122,21 +127,21 @@ div.splash_pic_container img
 .myQuote {
           background-image: url('../images/BIO/quoteBackground.jpg'); /*source https://cdn.pixabay.com/photo/2015/12/03/08/50/paper-1074131_960_720.jpg  */
           opacity: 0.65;
-	width:420px;
-	height:275px;
+	width:26.25em;
+	height:17.1875em;
 	position:auto;
 
 	text-align: center;
         font-family: 'Great Vibes', cursive;
-	font-size: 20px;
+	font-size: 1.25em;
 	color: black ;
 
-  margin-top: 10px;
+  margin-top: 1em;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 20px;
-              padding-top: 30px;
-              padding-left: 10px; }
+  margin-bottom: 1.25em;
+              padding-top: 1.875em;
+              padding-left: 1; }
 /* needed by bio page for quote  ends*/
 
 /* needed by bio page float */
@@ -144,9 +149,9 @@ div.splash_pic_container img
     float: right;
     width: ;
     height: ;
-    margin: 10px;
-    border: 20px;
-    bottom: 300px;
+    margin: 0.625em;
+    border: 1.25em;
+    bottom: 18.75em;
 
   		}
 
@@ -154,12 +159,12 @@ div.splash_pic_container img
     float: left;
     width: ;
     height: ;
-    margin: 20px ;
-    border: 20px;
+    margin: 1.25em ;
+    border: 1.25em;
 		}
 
   .floatClear {
-    padding: 20px;
+    padding: 1.25em;
       overflow: auto;
       font-family: 'Oswald', serif;
       font-size: 1.5em;
@@ -178,17 +183,17 @@ a:hover {
 }
 
 .thumbnailsContainer img {
-  margin-top: 10px;
+  margin-top: 0.625em;
   margin-right: 3%;
-  margin-bottom: 20px;
+  margin-bottom: 1.25em;
   margin-left: 10%;
 }
 
 .thumbnails img {
 	height: 2.5%;
   width: 2.5%;
-	border: 4px solid #555;
-	padding: 1px;
+	border: 0.25em solid #555;
+	padding: 0.0625em;
 }
 
 .thumbnails img:hover {
@@ -198,11 +203,11 @@ a:hover {
 
 .preview img {
   display: block;
-  border: 4px solid #444;
-  padding: 1px;
+  border: 0.25em solid #444;
+  padding: 0.0625em;
   margin: auto;
-  width: 750px;
-  height: 750px;
+  width: 46.875em;
+  height: 46.875em;
 
 }
 /* source of code http://html-tuts.com/html-photo-gallery-simple-javascript/ */
@@ -211,9 +216,9 @@ a:hover {
 /* needed for gallery hover over*/
 .hoverinfo {
   position: inherit;
-  top: 15px;
-  left: 15px;
-  font-size: 28px;
+  top: 0.9375em;
+  left: 0.9375em;
+  font-size: 1.75em;
   color: #ffffff;
   cursor: pointer;
 }
@@ -232,9 +237,9 @@ a:hover {
 .nav li {
   font-family: 'Oswald', sans-serif;
   font-size: 1.2em;
-  line-height: 50px;
-  height: 50px;
-  border-bottom: 1px solid #888;
+  line-height: 3.125em;
+  height: 3.125em;
+  border-bottom: 0.0625em solid #888;
 }
 
 .nav a {
@@ -257,31 +262,31 @@ a:hover {
   background-color: #005f5f;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 37.5em) {
   .nav li {
-    width: 150px;
+    width: 9.375em;
     border-bottom: none;
-    height: 50px;
-    line-height: 50px;
+    height: 3.125em;
+    line-height: 3.125em;
     font-size: 1.4em;
   }
   #div1{
   color:red;
-	height:300px;
-	width:300px;
+	height:18.75em;
+	width:18.75em;
 
   }
 
 .nav li {
     display: inline-block;
-    margin-right: -4px;
+    margin-right: -0.25em;
   }
  .logo {
 
  	margin:auto;
 
     display: inline-block;
-    height: 100px;
+    height: 6.25em;
     text-decoration: none;
   	color: #fff;
 
@@ -292,8 +297,8 @@ a:hover {
  	margin:auto;
 
     display: inline-block;
-    height: 25px;
-    width: 25px;
+    height: 1.5625em;
+    width: 1.5625em;
     text-decoration: none;
   	color: #fff;
 
@@ -302,14 +307,14 @@ a:hover {
 .footer {
     position: auto;
     background: #444;
-    padding: 10px 0;
+    padding: 0.625em 0;
 }
 
 .footer a {
     color: #fff;
 
-    padding: 10px;
-    border-right: 1px solid #fff;
+    padding: 0.625em;
+    border-right: 0.0625em solid #fff;
     -webkit-transition: all .5s ease;
     transition: all .5s ease;
     font-family: 'Oswald', sans-serif;
@@ -317,7 +322,7 @@ a:hover {
 }
 
 .footer a:first-child {
-    border-left: 1px solid #444;
+    border-left: 0.0625em solid #444;
 }
 
 .footer a:hover {
@@ -348,9 +353,9 @@ body {
 .nav li {
   font-family: 'Oswald', sans-serif;
   font-size: 1.2em;
-  line-height: 50px;
-  height: 50px;
-  border-bottom: 1px solid #888;
+  line-height: 3.125em;
+  height: 3.125em;
+  border-bottom: 0.0625em solid #888;
 }
 
 .nav a {
@@ -370,24 +375,24 @@ body {
   cursor: default;
 }
 
-@media screen and (min-width: 300px) {
+@media screen and (min-width: 18.75em) {
   .nav li {
-    width: 150px;
+    width: 9.375em;
     border-bottom: none;
-    height: 50px;
-    line-height: 50px;
+    height: 3.125em;
+    line-height: 3.125em;
     font-size: 1.4em;
   }
   #div1{
   color:red;
-	height:100px;
-	width:100px;
+	height:6.25em;
+	width:6.25em;
 
   }
 
 .nav li {
     display: inline-block;
-    margin-right: -4px;
+    margin-right: -0.25em;
   }
  .logo {
 
@@ -395,22 +400,22 @@ body {
 
     display: inline-block;
 
-    width: 50px;
-    height: 50px;
+    width: 6.5em;
+    height: 5em;
     text-decoration: none;
   	color: #fff;
 
  }
 .footer {
     background: #444;
-    padding: 10px 0;
+    padding: 0.625em 0;
 }
 
 .footer a {
     color: #fff;
 
-    padding: 10px;
-    border-right: 1px solid #fff;
+    padding: 0.625em;
+    border-right: 0.0625em solid #fff;
     -webkit-transition: all .5s ease;
     transition: all .5s ease;
     font-family: 'Oswald', sans-serif;
@@ -418,7 +423,7 @@ body {
 }
 
 .footer a:first-child {
-    border-left: 1px solid #444;
+    border-left: 0.0625em solid #444;
 }
 
 .footer a:hover {
